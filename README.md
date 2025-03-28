@@ -71,7 +71,7 @@ Système de **Gestion Électronique de Documents (GED)** développé par le grou
 
 ##  Équipe projet Grp_28__GED
 
--  **pingouin00** — Scrum Master / Responsable GitHub
+-  **pingouin00** — Scrum Master / Responsable GitHub / Développeuse
 -  **Shaimaedb** — Développeuse
 -  **MarouaBenjelloun** — Développeuse
 -  **Aassim-Zakariae** — Développeur
