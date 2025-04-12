@@ -1,232 +1,252 @@
 html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(to right, #0000FF, #00BBFF);
-    overflow: auto;
-    position: relative;
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Cercle décoratif */
-  .circle {
-    width: 610px;
-    height: 610px;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 0.1);
-    position: absolute;
-    top: -110px;
-    left: -176px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-  }
-  
-  .inner-circle {
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
-    background-color: #0000ffcf;
-  }
-  
-  /* Logo */
-  .logo {
-    position: absolute;
-    top: 55px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 239px;
-  }
-  
-  /* Icône de partage */
-  .share-icon {
-    position: absolute;
-    top: 30px;
-    right: 20px;
-    width: 30px;
-  }
-  
-  /* Flèches */
-  .arrows {
-    position: absolute;
-    top: 66px;
-    right: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .arrow-img {
-    width: 50px;
-    height: 50px;
-  }
-  
-  /* Icônes générales */
-  .icons-image {
-    position: absolute;
-    bottom: -185px;
-    left: 105%;
-    transform: translateX(-50%);
-    width: 1100px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right, #0000FF, #00BBFF);
+  overflow: auto;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
 
+/* Animation haut-bas */
+@keyframes upDown {
+  0%, 100% {
+    transform: translateY(0);
   }
-  
-  /* Section contenant les blocs */
-  .content-section {
-    margin-top: 370px;
-    padding: 110px;
-    display: flex;
-    flex-direction: column;
-    gap: 75px;
+  50% {
+    transform: translateY(-15px);
   }
-  
-  /* Bloc card */
-  .card {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 18px;
-    padding: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    backdrop-filter: blur(8px);
-    color: white;
-  }
-  
-  .card.reverse {
-    flex-direction: row-reverse;
-  }
-  
-  .card-img {
-    width: 250px;
-    height: 250px;
-    border-radius: 15px;
-  }
-  
-  .card .text {
-    width: 50%;
-    font-size: 18px;
-  }
-  
-  /* Bouton vert avec icône */
-  .green-btn {
-    margin-top: 15px;
-    padding: 10px 20px;
-    background-color: #00FF00;
-    color: black;
-    font-weight: bold;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .green-btn:hover {
-    background-color: #00cc00;
-  }
-  
-  .btn-icon {
-    width: 20px;
-    height: 20px;
-  }
-  /* Responsive pour mobile */
+}
+
+/* Cercle décoratif */
+.circle {
+  width: 610px;
+  height: 610px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: -110px;
+  left: -176px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.inner-circle {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background-color: #0000ffcf;
+}
+
+/* Logo */
+.logo {
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 239px;
+}
+
+/* Icône de partage */
+.share-icon {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  width: 30px;
+}
+
+/* Flèches */
+.arrows {
+  position: absolute;
+  top: 66px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.arrow-img {
+  width: 50px;
+  height: 50px;
+  animation: upDown 2s ease-in-out infinite;
+}
+
+/* Icônes générales */
+.icons-image {
+  position: absolute;
+  bottom: -185px;
+  left: 105%;
+  transform: translateX(-50%);
+  width: 1100px;
+}
+
+/* Section contenant les blocs */
+.content-section {
+  margin-top: 370px;
+  padding: 110px;
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+}
+
+/* Bloc card */
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  backdrop-filter: blur(8px);
+  color: white;
+}
+
+.card.reverse {
+  flex-direction: row-reverse;
+}
+
+.card-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 15px;
+}
+
+.card .text {
+  width: 50%;
+  font-size: 18px;
+  color: black;
+  font-family: cursive;
+}
+
+/* Bouton vert avec icône */
+.green-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #00FF00;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.green-btn:hover {
+  background-color: #00cc00;
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive pour mobile */
 @media screen and (max-width: 768px) {
-    .circle {
-      width: 300px;
-      height: 300px;
-      top: -80px;
-      left: -80px;
-    }
-  
-    .inner-circle {
-      width: 180px;
-      height: 180px;
-    }
-  
-    .logo {
-      width: 160px;
-      top: 30px;
-    }
-  
-    .icons-image {
-      width: 100%;
-      left: 50%;
-      bottom: -120px;
-      transform: translateX(-50%);
-    }
-  
-    .content-section {
-      margin-top: 320px;
-      padding: 20px;
-      gap: 40px;
-    }
-  
-    .card {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .card.reverse {
-      flex-direction: column;
-    }
-  
-    .card-img {
-      width: 200px;
-      height: 200px;
-    }
-  
-    .card .text {
-      width: 100%;
-    }
-  
-    .green-btn {
-      justify-content: center;
-    }
-  
-    .arrows {
-      top: auto;
-      bottom: 20px;
-      right: 10px;
-      flex-direction: row;
-    }
-  
-    .arrow-img {
-      width: 30px;
-      height: 30px;
-    }
-  
-    .share-icon {
-      width: 24px;
-    }
+  .circle {
+    width: 300px;
+    height: 300px;
+    top: -80px;
+    left: -80px;
   }
-  .decor-icon {
-    position: absolute;
-    z-index: 2;
-    width: 60px;
+
+  .inner-circle {
+    width: 180px;
+    height: 180px;
   }
-  
-  .icon1 {
-    top: 240px;
-    left: 30px;
+
+  .logo {
+    width: 160px;
+    top: 30px;
   }
-  
-  .icon2 {
-    top: 365px;
-    right: 20px;
+
+  .icons-image {
+    width: 100%;
+    left: 50%;
+    bottom: -120px;
+    transform: translateX(-50%);
   }
-  
-  .icon3 {
-    top: 620px;
-    left: 20px;
+
+  .content-section {
+    margin-top: 320px;
+    padding: 20px;
+    gap: 40px;
   }
-  
-  .icon4 {
-    top: 880px;
-    left: 20px;
+
+  .card {
+    flex-direction: column;
+    text-align: center;
   }
-    
+
+  .card.reverse {
+    flex-direction: column;
+  }
+
+  .card-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .card .text {
+    width: 100%;
+  }
+
+  .green-btn {
+    justify-content: center;
+  }
+
+  .arrows {
+    top: auto;
+    bottom: 20px;
+    right: 10px;
+    flex-direction: row;
+  }
+
+  .arrow-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .share-icon {
+    width: 24px;
+  }
+}
+
+/* Icônes décoratives */
+.decor-icon {
+  position: absolute;
+  z-index: 2;
+  width: 60px;
+}
+
+.icon1 {
+  top: 390px;
+  left: 30px;
+  width: 230px;
+}
+
+.icon2 {
+  top: 730px;
+  right: 20px;
+  width: 240px;
+  transform: rotate(30deg);
+}
+
+.icon3 {
+  top: 1544px;
+  left: 40px;
+  width: 239px;
+}
+
+.icon4 {
+  top: 790px;
+  left: 20px;
+  width: 239px;
+  transform: rotate(-25deg);
+}
