@@ -3,7 +3,9 @@ html, body {
   padding: 0;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(to right, #0000FF, #00BBFF);
+  background: url("https://media.giphy.com/media/tNt8ZSSrwNHzQcPABV/giphy.gif?cid=82a1493bkbwmthhknl1snwmoh0xeo6x0z4ze4ryfkeikdcxj&ep=v1_gifs_related&rid=giphy.gif&ct=g") no-repeat center center;
+    background-size: cover;
+    z-index: -10;
   overflow: auto;
   position: relative;
   font-family: Arial, sans-serif;
@@ -21,24 +23,24 @@ html, body {
 
 /* Cercle décoratif */
 .circle {
-  width: 610px;
-  height: 610px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.1);
-  position: absolute;
-  top: -110px;
-  left: -176px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
+  width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    background: rgb(64 210 206 / 26%);
+    position: absolute;
+    top: -110px;
+    left: -176px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -10;
 }
 
 .inner-circle {
-  width: 450px;
-  height: 450px;
-  border-radius: 50%;
-  background-color: #0000ffcf;
+  width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #4273f973;
 }
 
 /* Logo */
