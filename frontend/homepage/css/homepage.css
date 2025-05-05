@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #0000FF, #00BBFF);
+    background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTk4NTRwa3BvZXVvdDc1MHM2c2hxM3RnajN6bjR3bGZueG55MDRtdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/U3qYN8S0j3bpK/giphy.gif);
     color: white;
     overflow-y: auto;
   }
@@ -43,10 +43,11 @@ body {
   .logo {
     text-align: center;
     margin-top: 30px;
+    
   }
   
   .logo img {
-    height: 60px;
+    height: 150px;
   }
   
   /* Orb */
@@ -186,11 +187,11 @@ body {
   .title {
     display: flex;
     align-items: center;
-    gap: 10px;
-    height: 142px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 25px;
-    justify-content: center;
+        gap: 10px;
+        height: 80px;
+        background: #00bbff3d;
+        border-radius: 55px;
+        justify-content: center;
     font-weight: bold;
   }
   
@@ -200,9 +201,9 @@ body {
   
   .desc {
     margin-top: 10px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgb(95 5 88 / 45%);
     padding: 15px;
-    border-radius: 25px;
+    border-radius: 80px;
     height: 100px;
     color: white;
     font-size: 14px;

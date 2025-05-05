@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   width: 100%;
   min-height: 100vh;
-  background: url("https://media.giphy.com/media/tNt8ZSSrwNHzQcPABV/giphy.gif?cid=82a1493bkbwmthhknl1snwmoh0xeo6x0z4ze4ryfkeikdcxj&ep=v1_gifs_related&rid=giphy.gif&ct=g") no-repeat center center;
+  background: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTk4NTRwa3BvZXVvdDc1MHM2c2hxM3RnajN6bjR3bGZueG55MDRtdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/U3qYN8S0j3bpK/giphy.gif) no-repeat center center;
     background-size: cover;
     z-index: -10;
   overflow: auto;
@@ -26,7 +26,7 @@ html, body {
   width: 750px;
     height: 750px;
     border-radius: 50%;
-    background: rgb(64 210 206 / 26%);
+    background: rgb(75 22 62 / 26%);
     position: absolute;
     top: -110px;
     left: -176px;
@@ -40,25 +40,18 @@ html, body {
   width: 500px;
     height: 500px;
     border-radius: 50%;
-    background-color: #4273f973;
+    background-color:#53054c30;
 }
 
 /* Logo */
 .logo {
   position: absolute;
-  top: 55px;
+  top: 15px;
   left: 50%;
   transform: translateX(-50%);
-  width: 239px;
+  width: 246px;
 }
 
-/* Icône de partage */
-.share-icon {
-  position: absolute;
-  top: 30px;
-  right: 20px;
-  width: 30px;
-}
 
 /* Flèches */
 .arrows {
@@ -87,7 +80,7 @@ html, body {
 
 /* Section contenant les blocs */
 .content-section {
-  margin-top: 370px;
+  margin-top: 86px;
   padding: 110px;
   display: flex;
   flex-direction: column;
@@ -120,7 +113,7 @@ html, body {
 .card .text {
   width: 50%;
   font-size: 18px;
-  color: black;
+  color: white;
   font-family: cursive;
 }
 
@@ -234,14 +227,14 @@ html, body {
 }
 
 .icon2 {
-  top: 730px;
+  top: 850px;
   right: 20px;
   width: 240px;
   transform: rotate(30deg);
 }
 
 .icon3 {
-  top: 1544px;
+  top: 1230px;
   left: 40px;
   width: 239px;
 }
