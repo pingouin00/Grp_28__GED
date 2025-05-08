@@ -55,6 +55,7 @@ body {
   height: 150px;
   margin: 0 auto;
   margin-top: -125px;
+  z-index: 1;
 }
 
 .bottom-icons button {
@@ -145,7 +146,9 @@ body {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
+  z-index: 10;
+  position: relative;
 }
 
 .buttons button {

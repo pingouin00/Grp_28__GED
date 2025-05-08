@@ -15,7 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = `../resultatdurecherche/resultat.html?query=${encodeURIComponent(value)}`;
       }
     });
-  
+   // Redirection vers la page d'accueil lorsque l'icône "Home" est cliquée
+   document.getElementById("btn-home").addEventListener("click", function () {
+    window.location.href = "../homepage/homepage.html";
+  });
+
     // Effacer le message d'erreur si l'utilisateur commence à taper
     searchInput.addEventListener("input", function () {
       errorMessage.style.display = "none";
