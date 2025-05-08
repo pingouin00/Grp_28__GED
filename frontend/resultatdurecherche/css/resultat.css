@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTk4NTRwa3BvZXVvdDc1MHM2c2hxM3RnajN6bjR3bGZueG55MDRtdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/U3qYN8S0j3bpK/giphy.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    width: 61px;
+    height: 450px;
+    background: #00FF00;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    z-index: 10;
+  }
+  
+  .sidebar button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  
+  .sidebar button img {
+    width: 25px;
+  }
+  
+  .sidebar button:first-child {
+    background-color: rgba(255, 255, 255, 0.77);
+    border-radius: 50%;
+    padding: 15px;
+  }
+  
+  /* Contenu principal */
+  .main-content {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 58px;
+  }
+  
+  /* Logo centré */
+  .logo {
+    margin-bottom: 30px;
+  }
+  
+  .logo img {
+    height: 120px;
+  }
+  
+  /* Résultat */
+  .result-container {
+    max-width: 700px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  .result-box {
+    border: 1px solid #ccc;
+    background-color: #ffffff85;
+    padding: 30px;
+    min-height: 213px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #333;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 60px;
+    color: lightgray;
+  }
