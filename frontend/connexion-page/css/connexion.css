@@ -1,0 +1,272 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #0a3d62, #2980b9);
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 40px); /* laisse de l’espace pour le footer */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .left-section {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    
+  }
+  
+  .left-section h1 {
+    font-size: 3rem;
+    font-family: 'Abhaya Libre Medium', serif;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+    margin-left: 140px; 
+    margin-top: 0;
+  }
+  
+  .icon-banner {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .auth-box {
+    flex: 0 0 400px;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 80px;
+    margin-right: 40px;
+  }
+
+  body.dark-mode .auth-box{
+    background-color:#203a43;
+  }
+  
+  .btn {
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    margin: 10px 0;
+    cursor: pointer;
+    width: 80%;
+  }
+  
+  .btn.green {
+    background-color: #00e676;
+    color: white;
+  }
+  
+  .new {
+    color: rgb(165, 33, 33);
+    font-weight: bold;
+  }
+  
+  .social-icons {
+    margin-top: 15px;
+  }
+  
+  .social-icons img {
+    width: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .global-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    font-size: 0.85rem;
+    z-index: 100;
+  }
+  
+  .global-footer .phrase,
+  .global-footer a {
+    color: white;
+    margin: 0;
+    text-decoration: none;
+  }
+  
+  .theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    margin-right: 20px;
+    margin-top: 20px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  /* Mode nuit */
+  body.dark-mode {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #ccc;
+  }
+ 
+  
+  body.dark-mode .btn {
+    background: linear-gradient(to right,rgba(93, 166, 198, 1));
+    color: white;
+    transition: background 0.3s ease;
+  }
+  
+  
+  body.dark-mode .global-footer a {
+    color: #aaa;
+  }
+  
+
+  body.dark-mode .input-group input{
+    background: linear-gradient(to right,rgba(35, 84, 106, 1));
+  }
+
+
+  .logo {
+    width: 150px;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    margin-top: -80px;
+  }
+
+
+  .input-group {
+    position: relative;
+    width: 80%;
+    margin: 15px auto;
+    
+    
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 12px 40px 12px 12px;
+    border: #00aaff;
+    border-radius: 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color:  #00aaff;
+    Font: Abel;
+    color: white;
+  }
+  
+  .input-group input::placeholder {
+    color: white;
+  }
+
+  .input-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+  }
+
+  .input-group input::placeholder {
+    text-align: center;
+  }
+  
+  .submit-btn {
+    display: block;
+    margin: 20px auto 30px;
+    padding: 10px 20px;
+    background: #00ff6a;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    width: auto;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+
+ /* @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+      height: auto;
+    }
+  
+    .left-section {
+      text-align: center;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+  
+    .left-section h1 {
+      font-size: 2rem;
+      margin-left: 0;
+    }
+  
+  
+  
+    .icon-banner {
+      width: 70%;
+      margin: 0 auto;
+    }
+  
+    .auth-box {
+      width: 90%;
+      margin: 20px 0;
+    }
+  
+    .btn {
+      width: 100%;
+      font-size: 1rem;
+    }
+  
+    .social-icons img {
+      width: 35px;
+      margin: 0 8px;
+    }
+  
+    .logo {
+      width: 100px;
+      position: static;
+      margin: 20px auto 0;
+      display: block;
+    }
+  
+    .global-footer {
+      font-size: 0.75rem;
+      padding: 5px 0;
+    }
+  }
+    */
+  
