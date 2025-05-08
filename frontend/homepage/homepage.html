@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Diwan Interface</title>
   <link rel="stylesheet" href="./css/homepage.css" />
 </head>
+
 <body>
 
   <!-- Barre latérale -->
   <div class="sidebar">
-    <button ><img src="./images/home.png" alt="Home" /></button>
+    <button><img src="./images/home.png" alt="Home" /></button>
     <button><img src="./images/user.png" alt="User" /></button>
     <button><img src="./images/history.png" alt="Time" /></button>
     <button class="bottom-icon"><img src="./images/settings.png" alt="Settings" /></button>
-    <button><img src="./images/sortir.png" alt="se deconnecter" /></button>
+    <button><img src="./images/sortir.png" alt="se déconnecter" /></button>
   </div>
 
   <!-- Logo -->
@@ -24,44 +26,34 @@
 
   <!-- Orb -->
   <div class="orb">
-    <p>Veuillez saisir le nom ou l’URL du fichier ou du document que vous souhaitez télécharger ou explorer.</p>
+    <p>Veuillez saisir le nom ou l'URL du fichier ou du document que vous souhaitez télécharger ou explorer.</p>
     <div class="search">
-      <input type="text" placeholder="Search" />
+      <input type="text" id="searchInput" placeholder="Search" />
       <img src="./images/loop.png" alt="Search Icon" />
     </div>
+
+    <div class="error-message" id="errorMessage"></div>
+
     <div class="buttons">
       <button>Importer</button>
-      <button>Explorer</button>
+      <button id="explorerBtn">Explorer</button>
     </div>
+
     <div class="bottom-icons">
-        <button ><img src="./images/ecxelicon.png" alt="excel" /></button>
-        <button><img src="./images/docxicon.png" alt="docx" /></button>
-        <button><img src="./images/imgicon.png" alt="img" /></button>
-        <button ><img src="./images/pdficon.png" alt="pdf" /></button>
-        <button><img src="./images/powerpointicon.png" alt="powerpoint" /></button>
+      <button><img src="./images/ecxelicon.png" alt="excel" /></button>
+      <button><img src="./images/docxicon.png" alt="docx" /></button>
+      <button><img src="./images/imgicon.png" alt="img" /></button>
+      <button><img src="./images/pdficon.png" alt="pdf" /></button>
+      <button><img src="./images/powerpointicon.png" alt="powerpoint" /></button>
     </div>
+
   </div>
 
   <!-- Fichiers récents -->
   <section class="recent-section">
     <h2>Fichiers Récents</h2>
     <div class="recent-files">
-      <div class="file">
-        <div class="title"><img src="./images/ecxelicon.png" alt="File Icon" />test.xlsx</div>
-        <div class="desc">Présentation Diwan consultée il y a 15 minutes.</div>
-      </div>
-      <div class="file">
-        <div class="title"><img src="./images/docxicon.png" alt="Doc Icon" />fichier.docx</div>
-        <div class="desc">Rapport 2023 modifié il y a 8 heures.</div>
-      </div>
-      <div class="file">
-        <div class="title"><img src="./images/pdficon.png" alt="PDF Icon" />analyse.pdf</div>
-        <div class="desc">Dossier Projet ajouté il y a 2 jours.</div>
-      </div>
-      <div class="file">
-        <div class="title"><img src="./images/imgicon.png" alt="Image Icon" />nature.png</div>
-        <div class="desc">Notes de Recherche mises à jour il y a 1 semaine.</div>
-      </div>
+      <!-- Contenu des fichiers récents -->
     </div>
   </section>
 
@@ -70,5 +62,8 @@
     © 2025 Diwan. Tous droits réservés. Politique de confidentialité | Conditions d'utilisation.
   </footer>
 
+  <script src="./js/homepage.js"></script>
+
 </body>
+
 </html>
