@@ -14,3 +14,11 @@ toggleBtn.addEventListener('click', () => {
     diwanLogo.src = "/img/Diwanlogo-removebg.png";
   }
 });
+
+document.getElementById('signup').addEventListener('click', function() {
+  window.location.href = '/inscription-page/inscription.html';
+});
+
+document.getElementById('login').addEventListener('click', function() {
+  window.location.href = '/connexion-page/connexion.html';
+});
