@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diwan Profil</title>
+  <link rel="stylesheet" href="./css/user.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <button id="btn-home"><img src="../homepage/images/home.png" alt="Home" /></button>
+    <button><img src="../homepage/images/user.png" alt="User" /></button>
+    <button id="btn-history"><img src="../homepage/images/history.png" alt="History" /></button>
+    <button id="btn-settings" class="bottom-icon"><img src="../homepage/images/settings.png" alt="Settings" /></button>
+    <button><img src="../homepage/images/sortir.png" alt="Logout" /></button>
+  </div>
+
+  <div class="logo">
+    <img src="../homepage/images/logo.png" alt="Logo Diwan" />
+  </div>
+
+  <div class="user-orb">
+    <input type="text" placeholder="Entrez votre nouveau nom." id="username" />
+    <input type="email" placeholder="Modifiez votre adresse e-mail ici." id="email" />
+    <input type="tel" placeholder="Ajoutez ou mettez à jour votre numéro de téléphone" id="phone" />
+    <button onclick="valider()">Enregistrer</button>
+    <div id="error-message"></div>
+    <p>Confirmez les modifications en cliquant sur 'Enregistrer'</p>
+  </div>
+
+  <footer>
+    © 2025 Diwan. Tous droits réservés. Politique de confidentialité | Conditions d'utilisation.
+  </footer>
+
+  <script src="./js/user.js"></script>
+</body>
+</html>
