@@ -11,14 +11,30 @@
 <body>
 
   <!-- Barre latérale -->
-  <div class="sidebar">
-    <button id="btn-home"><img src="./images/home.png" alt="Home" /></button>
-    <button><img src="./images/user.png" alt="User" /></button>
-    <button><img src="./images/history.png" alt="Time" /></button>
-    <button class="bottom-icon"><img src="./images/settings.png" alt="Settings" /></button>
-    <button><img src="./images/sortir.png" alt="se déconnecter" /></button>
-  </div>
+  <!-- Barre latérale -->
+<div class="sidebar">
+  <button id="btn-home"><img src="./images/home.png" alt="Home" /></button>
 
+  <!-- Vers userpage -->
+  <button onclick="window.location.href='../userpage/user.html'">
+    <img src="./images/user.png" alt="User" />
+  </button>
+
+  <!-- Vers historique -->
+  <button onclick="window.location.href='../historique/historique.html'">
+    <img src="./images/history.png" alt="Time" />
+  </button>
+
+  <!-- Vers paramètres -->
+  <button class="bottom-icon" onclick="window.location.href='../parametre/parametre.html'">
+    <img src="./images/settings.png" alt="Settings" />
+  </button>
+
+  <!-- Déconnexion (ajoute une fonction si besoin) -->
+  <button onclick="alert('Déconnexion non encore implémentée');">
+    <img src="./images/sortir.png" alt="se déconnecter" />
+  </button>
+</div>
   <!-- Logo -->
   <div class="logo">
     <img src="./images/logo.png" alt="Logo Diwan" />

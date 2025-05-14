@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/motdepasse.css">
+    <title>Mot de passe oublié</title>
+</head>
+
+<body>
+
+    <!-- Flèche pour revenir aux paramètres -->
+    <div class="back-arrow">
+        <a href="../parametre.html" class="back-link">
+            <span class="arrow">←</span>
+            <span>Retour</span>
+        </a>
+    </div>
+
+    <!-- Formulaire de réinitialisation du mot de passe -->
+    <div class="reset-password-container">
+        <h2>Mot de passe oublié ? 🔐</h2>
+        <p>Pas de souci ! Indiquez l’e-mail associé à votre compte ✉️</p>
+        <p>On vous enverra un lien pour réinitialiser votre mot de passe en un clin d’œil 🔄</p>
+
+        <form id="forgot-password-form" class="reset-password-form">
+            <input type="email" id="email" placeholder="Entrez votre email" required>
+            <button type="submit">Envoyer</button>
+        </form>
+
+        <p id="error-message" class="error-message"></p>
+    </div>
+
+    <footer>
+        © 2025 Diwan. Tous droits réservés.
+    </footer>
+
+    <script src="./js/motdepasse.js"></script>
+</body>
+
+</html>
