@@ -1,0 +1,131 @@
+/* Structure de base de la page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTk4NTRwa3BvZXVvdDc1MHM2c2hxM3RnajN6bjR3bGZueG55MDRtdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/U3qYN8S0j3bpK/giphy.gif');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Cette propriété permet au body d'occuper au moins toute la hauteur de la fenêtre */
+}
+
+/* Section principale de la page */
+main {
+    flex: 1; /* Cela permet au main de prendre toute la place disponible, laissant le footer toujours en bas */
+}
+
+/* Flèche pour revenir aux paramètres */
+.back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.back-link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow {
+    font-size: 22px;
+    margin-right: 8px;
+}
+
+.back-link:hover {
+    color: #00FF00;
+}
+
+/* Conteneur principal pour le formulaire */
+.reset-password-container {
+    
+
+
+
+          position: relative;
+    margin: 80px auto 100px auto;
+    width: 500px;
+    height: 368px;
+    border-radius: 5%;
+    background-color: #00081cdb;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+}
+
+/* Titre du formulaire */
+.reset-password-container h2 {
+    color: #fff;
+    font-size: 28px;
+}
+
+/* Description sous le titre */
+.reset-password-container p {
+    color: #ddd;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Formulaire avec un input pour l'email */
+.reset-password-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="email"] {
+        width: 139%;
+    padding: 15px;
+    margin: 20px 0;
+    border: 2px solid #ccc;
+    border-radius: 35px;
+    font-size: 16px;
+    color: black;
+}
+
+/* Bouton pour soumettre le formulaire */
+button {
+        padding: 15px 40px;
+    background-color: #00FF00;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 45px;
+    width: 80%;
+}
+
+button:hover {
+    background-color: #28a745;
+}
+
+/* Message d'erreur */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+        width: 100%;
+    padding: 12px;
+    text-align: center;
+    background-color: rgb(0 0 0 / 0%);
+    color: lightgray;
+    font-size: 12px;
+    position: relative;
+    bottom: 0;
+}

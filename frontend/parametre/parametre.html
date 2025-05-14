@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/parametre.css">
+    <title>Paramètres</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <button id="btn-home"><img src="../homepage/images/home.png" alt="Home"></button>
+        <button id="btn-user"><img src="../homepage/images/user.png" alt="User"></button>
+        <button id="btn-history"><img src="../homepage/images/history.png" alt="History"></button>
+        <button id="btn-settings"><img src="../homepage/images/settings.png" alt="Settings"></button>
+        <button id="btn-logout"><img src="../homepage/images/sortir.png" alt="Logout"></button>
+    </div>
+
+    <!-- Logo -->
+    <div class="logo">
+        <img src="../homepage/images/logo.png" alt="Logo Diwan">
+    </div>
+
+    <!-- Titre Paramètres -->
+    <div class="settings-title">
+        <h1>Paramètres</h1>
+    </div>
+
+    <!-- Div qui contient les 3 boutons -->
+    <div class="settings-container">
+        <button id="btn-delete-account">Supprimer le compte</button>
+
+        <div id="delete-msg" class="confirmation-msg">
+            <p>Êtes-vous sûr de vouloir supprimer votre compte ?</p>
+            <button id="confirm-delete">Confirmer</button>
+        </div>
+
+        <button id="btn-notifications" class="inactive">
+            Activer les notifications
+            <span id="notification-status">❌ Notifications désactivées</span>
+        </button>
+
+        <!-- Bouton mot de passe oublié sans lien, géré par JavaScript -->
+        <button id="btn-forgot-password">Mot de passe oublié ?</button>
+    </div>
+
+    <footer>
+        © 2025 Diwan. Tous droits réservés.
+    </footer>
+
+    <script src="./js/parametre.js"></script>
+
+</body>
+
+</html>
