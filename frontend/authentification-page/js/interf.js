@@ -11,9 +11,9 @@ toggleBtn.addEventListener('click', () => {
 });
 
 document.getElementById('signup').addEventListener('click', function() {
-  window.location.href = '/inscription-page/inscription.html';
+  window.location.href = '../inscription-page/inscription.html';
 });
 
 document.getElementById('login').addEventListener('click', function() {
-  window.location.href = '/connexion-page/connexion.html';
+  window.location.href = '../connexion-page/connexion.html';
 });
