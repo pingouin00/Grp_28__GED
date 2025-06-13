@@ -1,28 +1,32 @@
-from sentence_transformers import SentenceTransformer
 import faiss
 import numpy as np
-from ml.db_loader import load_documents_from_db
+from sentence_transformers import SentenceTransformer
+from typing import List
 
-# Charger le modèle léger d'embedding
+# Initialisation du modèle et de l'index FAISS
 model = SentenceTransformer("all-MiniLM-L6-v2")
+index = faiss.IndexFlatL2(384)  # 384 est la taille de l'embedding MiniLM
 
-# Charger les documents depuis MongoDB
-documents = load_documents_from_db()
+# Données d'exemple
+documents: List[str] = [
+    "Le projet Diwan permet de classer automatiquement les fichiers.",
+    "L’utilisateur peut poser une question et obtenir une réponse par l’IA.",
+    "L’application utilise FAISS et SentenceTransformer."
+]
 
-if not documents:
-    raise ValueError("Aucun document trouvé dans la base de données MongoDB.")
+# Embedding des documents
+doc_embeddings = model.encode(documents)
+doc_embeddings = np.array(doc_embeddings).astype("float32")
 
-# Encoder les documents en vecteurs
-doc_embeddings = np.array(model.encode(documents))
-
-# Construire l'index FAISS
-index = faiss.IndexFlatL2(doc_embeddings.shape[1])
+# Ajout à l'index
 index.add(doc_embeddings)
 
-def find_relevant_context(question: str, top_k=1):
+# Fonction pour retrouver les documents similaires
+def find_similar_context(question: str, top_k: int = 1) -> List[str]:
     """
-    Retourne les documents les plus similaires à la question.
+    Reçoit une question et retourne les contextes les plus proches.
     """
-    question_vec = np.array(model.encode([question]))
-    D, I = index.search(question_vec, top_k)
-    return [documents[i] for i in I[0]]
+    question_vec = model.encode([question])
+    question_vec = np.array(question_vec).astype("float32")
+    distances, indices = index.search(question_vec, top_k)
+    return [documents[i] for i in indices[0]]
