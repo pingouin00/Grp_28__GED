@@ -7,14 +7,11 @@ from Document_Management.views import CreateUserView
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-
     # Auth & user
-    path("Document_Management/user/register/", CreateUserView.as_view(), name="register"),
-    path("Document_Management/token/", TokenObtainPairView.as_view(), name="get_token"),
-    path("Document_Management/token/refresh/", TokenRefreshView.as_view(), name="refresh"),
-    path("Document_Management-auth/", include("rest_framework.urls")),
-    path("Document_Management/", include("Document_Management.urls")),
+    path('admin/', admin.site.urls),
+    path('api/auth/', include('apps.authentication.urls')),
+    path('api/documents/', include('apps.documents.urls')),
+    path('api/notes/', include('apps.notes.urls')),
 
     # OCR
     path("ocr/", include("ocr.urls")),
